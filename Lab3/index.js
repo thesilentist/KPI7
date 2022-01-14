@@ -22,10 +22,10 @@ async function fillModalInfo(driver) {
     until.elementLocated(By.id("custom_gender_container"), 1000)
   );
 
-  await driver.findElement(By.name("firstname")).sendKeys("Ivan", Key.RETURN);
-  await driver.findElement(By.name("lastname")).sendKeys("Ivanov", Key.RETURN);
+  await driver.findElement(By.name("firstname")).sendKeys("Stepan", Key.RETURN);
+  await driver.findElement(By.name("lastname")).sendKeys("Stepanenko", Key.RETURN);
 
-  const email = "vadovi1864@zoeyy.com";
+  const email = "stepan007@zoeyy.com";
   await driver.findElement(By.name("reg_email__")).sendKeys(email, Key.RETURN);
   await driver.wait(
     until.elementLocated(By.name("reg_email_confirmation__"), 1000)
@@ -34,7 +34,7 @@ async function fillModalInfo(driver) {
     .findElement(By.name("reg_email_confirmation__"))
     .sendKeys(email, Key.RETURN);
 
-  const password = "78123hjksdbnf?>?ISJKsad.123.,4AUghJAS";
+  const password = "o0tsdbnf78123?4AUghJA>1ISJKsad.123.,S";
   await driver
     .findElement(By.id("password_step_input"))
     .sendKeys(password, Key.RETURN);
